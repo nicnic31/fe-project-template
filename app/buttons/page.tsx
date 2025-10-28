@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Button from "@/src/components/ui/button";
-import { Home } from "lucide-react";
+import Button from '@/src/components/ui/button';
+import { Home } from 'lucide-react';
 
 export default function ButtonsPage() {
   return (
-    <section className="bg-background w-screen h-screen py-24 px-24">
+    <section className="bg-background h-screen w-screen px-24 py-24">
       {/* Contained Buttons */}
-      <h1 className="text-2xl font-bold mb-2">Contained Buttons</h1>
+      <h1 className="mb-2 text-2xl font-bold">Contained Buttons</h1>
 
-      <div className="grid grid-cols-6 gap-4 mb-16">
+      <div className="mb-16 grid grid-cols-6 gap-4">
         <Button>Button</Button>
         <Button color="secondary">Button</Button>
         <Button color="info">Button</Button>
@@ -19,9 +19,9 @@ export default function ButtonsPage() {
       </div>
 
       {/* Outlined Buttons */}
-      <h1 className="text-2xl font-bold mb-2">Outlined Buttons</h1>
+      <h1 className="mb-2 text-2xl font-bold">Outlined Buttons</h1>
 
-      <div className="grid grid-cols-6 gap-4 mb-16">
+      <div className="mb-16 grid grid-cols-6 gap-4">
         <Button variant="outlined">Button</Button>
         <Button variant="outlined" color="secondary">
           Button
@@ -41,9 +41,9 @@ export default function ButtonsPage() {
       </div>
 
       {/* Text Buttons */}
-      <h1 className="text-2xl font-bold mb-2">Text Buttons</h1>
+      <h1 className="mb-2 text-2xl font-bold">Text Buttons</h1>
 
-      <div className="grid grid-cols-6 gap-4 mb-16">
+      <div className="mb-16 grid grid-cols-6 gap-4">
         <Button variant="text">Button</Button>
         <Button variant="text" color="secondary">
           Button
@@ -63,9 +63,9 @@ export default function ButtonsPage() {
       </div>
 
       {/* Icon Buttons */}
-      <h1 className="text-2xl font-bold mb-2">Icon Buttons</h1>
+      <h1 className="mb-2 text-2xl font-bold">Icon Buttons</h1>
 
-      <div className="grid grid-cols-6 gap-4 mb-16">
+      <div className="mb-16 grid grid-cols-6 gap-4">
         <Button startIcon={<Home size={16} />}>Button</Button>
         <Button color="secondary" startIcon={<Home size={16} />}>
           Button
@@ -85,9 +85,9 @@ export default function ButtonsPage() {
       </div>
 
       {/* Loading and Disabled Buttons */}
-      <h1 className="text-2xl font-bold mb-2">Loading Buttons</h1>
+      <h1 className="mb-2 text-2xl font-bold">Loading Buttons</h1>
 
-      <div className="grid grid-cols-6 gap-4 mb-16">
+      <div className="mb-16 grid grid-cols-6 gap-4">
         <Button loading>Button</Button>
         <Button disabled>Button</Button>
       </div>
