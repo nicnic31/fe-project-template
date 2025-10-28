@@ -20,6 +20,37 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Code Quality
+
+This project uses Prettier for code formatting and Husky for Git hooks to ensure code quality.
+
+### Formatting
+
+- **Format all files**: `yarn format`
+- **Check formatting**: `yarn format:check`
+- **Lint code**: `yarn lint`
+
+### Git Hooks
+
+Husky is configured to automatically run checks before commits:
+
+- **Pre-commit**: Runs Prettier and ESLint on staged files using lint-staged
+- **Commit-msg**: Validates commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) format
+
+#### Conventional Commit Format
+
+```
+<type>(optional scope): <description>
+
+Types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert
+```
+
+Examples:
+
+- `feat: add user authentication`
+- `fix(api): resolve CORS issue`
+- `docs: update README`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
