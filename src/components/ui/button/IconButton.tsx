@@ -24,6 +24,7 @@ const IconButton = forwardRef<HTMLButtonElement, IIconButton>(
   (
     {
       children,
+      className,
       variant = 'contained',
       color = 'primary',
       loading = false,
@@ -78,7 +79,8 @@ const IconButton = forwardRef<HTMLButtonElement, IIconButton>(
           variant === 'contained' ? containedStyles[color] : 'bg-transparent',
           variant === 'outlined' ? 'border hover:border-2' : 'border-none',
           variant === 'outlined' && outlinedStyles[color],
-          variant === 'text' && textStyles[color]
+          variant === 'text' && textStyles[color],
+          className
         )}
         {...props}
       >
